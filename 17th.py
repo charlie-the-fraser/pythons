@@ -23,3 +23,6 @@ total = sum(notifications)
 print(total)
 average = total / len(notifications)
 print(average)
+
+input("do you want a list index assignment out of range error")
+notifications[99999] = 67
