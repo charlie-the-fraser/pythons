@@ -73,7 +73,7 @@ def pricing():
     for i in range(1, party):
         valid = False
         while not valid:
-            age = input(f"what is the age of guest no.{i}")
+            age = input(f"what is the age of guest no.{i} ")
             try:
                 int(age)
                 valid = True
@@ -92,7 +92,10 @@ def pricing():
                     else:
                         ages.append("senior")
                         price = price + 7.20 * games
-    input(f"thank you for booking, your total is {price}")
+    input(f"thank you for booking, your total is £{price}")
     return(price)
 
-pricing()
+cafeMenue = {"hot drink" : 1.50, "pizza slice" : 2.00, "sandwhich" : 1.80, "pastry" : 2.50, "breakfast bagel" : 3.20}
+
+def cafeTime():
+    global cafeMenue

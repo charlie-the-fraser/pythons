@@ -1,0 +1,25 @@
+from datetime import datetime
+loans = {}
+
+def checkDate(date):
+    try:
+        datetime.strptime(date, "%d/%m/%Y").date()
+    except:
+        print("Sorry, you did not enter a valid date")
+        valid = False
+    else:
+        valid = True
+    return datetime.strptime(date, "%d/%m/%Y").date(), valid
+
+def addloan():
+    global loans
+    loanID = input("enter loan ID ")
+    studentName = input("enter students name ")
+    studentID = input("enter students ID ")
+    device = input("what type of device was loaned? ")
+    deviceID = input("enter devices ID ")
+    valid = False
+    while not valid:        
+        dateOut = input("enter date the loan begins")
+        dateIn = input("enter date the device is returnes")
+        for 
